@@ -7,9 +7,11 @@ footer: "by **＠tomo-makes**"
 # Lightning web componentについて
 
 ---
-# スライド1
+# 目次
 
-テスト
+1. salesforce における画面開発の種類
+2. Lightning web component とは
+3. Lightning web component と Auraの違い
 
 ---
 # スライド2
