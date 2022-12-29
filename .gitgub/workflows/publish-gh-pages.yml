@@ -7,7 +7,6 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v2
 
@@ -17,7 +16,7 @@ jobs:
           config-file: ./contents/en/.marprc.yml
 
       - name: Convert Markdown into HTML and PDF (ja)
-        uses: KoharaKazuya/marp-cli-action@v2
+        uses: ./
         with:
           config-file: ./contents/ja/.marprc.yml
 
