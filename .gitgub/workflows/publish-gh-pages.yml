@@ -11,8 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Convert Markdown into HTML and PDF
+      - name: Convert Markdown into HTML and PDF (ja)
         uses: KoharaKazuya/marp-cli-action@v2
+        with:
+          config-file: ./contents/.marprc.yml
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
