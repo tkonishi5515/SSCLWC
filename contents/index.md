@@ -5,6 +5,8 @@ header: "**Qiita** __Marp samples__"
 footer: "by **＠tomo-makes**"
 ---
 
+<!-- _paginate: false -->
+
 # Lightning web component について
 
 ---
