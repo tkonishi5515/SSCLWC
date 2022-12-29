@@ -19,6 +19,9 @@ footer: "by **＠tomo-makes**"
 
 # 1. salesforce における画面開発の種類
 
-テスト
+- 画面フロー
+- visualforce
+- Aura
+- LWC
 
 ---
