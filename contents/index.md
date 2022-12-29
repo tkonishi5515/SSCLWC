@@ -1,5 +1,6 @@
 ---
 marp: true
+paginate: true
 header: "**Qiita** __Marp samples__"
 footer: "by **＠tomo-makes**"
 ---
