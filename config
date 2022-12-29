@@ -1,4 +1,0 @@
-DIR=contents
-DST=dist
-FORMAT=pdf
-RELEASE_VERSION=2021.04.20
