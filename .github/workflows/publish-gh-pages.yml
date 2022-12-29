@@ -10,11 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Convert Markdown into HTML and PDF
-        uses: ./
-        with:
-          config-file: ./contents/en/.marprc.yml
-
       - name: Convert Markdown into HTML and PDF (ja)
         uses: ./
         with:
