@@ -1,3 +1,4 @@
 # LWC について
 
-https://powerninja.github.io/SSCLWC/contents/index.html
+- スライドリンク
+  - https://powerninja.github.io/SSCLWC/ja/index.html
