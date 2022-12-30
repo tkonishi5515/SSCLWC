@@ -12,6 +12,11 @@ footer: "by **＠tkonishi**"
 
 # Lightning Web Componets について <!-- fit -->
 
+</br>
+</br>
+
+![Slides are here](images/qrcode.png)
+
 ##### スライド:https://powerninja.github.io/SSCLWC/ja/index.html
 
 ##### リポジトリ:https://github.com/powerninja/SSCLWC
