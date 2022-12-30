@@ -1,26 +1,46 @@
 ---
 marp: true
 paginate: true
+theme: gaia
+header: "**Lightning Web Components** __について__"
+footer: "by **＠tkonishi**"
 ---
 
 <!-- _paginate: false -->
 
-# Lightning Web Component について <!-- fit -->
+<!-- ![w:2000](https://www.nearpartner.com/wp-content/uploads/2019/02/LWC-salesforce.png) -->
+
+# Lightning Web Componets について <!-- fit -->
+
+##### スライド:https://powerninja.github.io/SSCLWC/ja/index.html
+
+##### リポジトリ:https://github.com/powerninja/SSCLWC
 
 ---
 
-# 目次
+# はじめに
+
+- なにかかく
+
+---
+
+---
+
+# トピックス
 
 1. salesforce における画面開発の種類
-2. Lightning web component とは
-3. Lightning web component と Aura の違い
+2. なぜ Lightning Web Components を選択するのか
+3. Lightning Web Components とは
+4. Lightning Web Components と Aura の違い
 
 ---
 
 # salesforce における画面開発の種類
 
-- テスト
-- tesuto
+- 画面フロー
+- visualforce
+- Aura
+- **Lightning Web Components**
 
 ---
 
