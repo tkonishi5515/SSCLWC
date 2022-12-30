@@ -5,25 +5,22 @@ paginate: true
 
 <!-- _paginate: false -->
 
-# [Marp CLI Action](https://github.com/KoharaKazuya/marp-cli-action) について <!-- fit -->
+# Lightning Web Component について <!-- fit -->
 
 ---
 
-## [Marp CLI Action](https://github.com/KoharaKazuya/marp-cli-action) とは...
+# 目次
 
-[@marp-team/marp-cli](https://github.com/marp-team/marp-cli) を用いて Markdown ファイルを静的な HTML / CSS、PDF、PowerPoint ドキュメント、画像などに変換する [GitHub Action](https://docs.github.com/actions) です。テスト
-
-このアクションは Marp CLI を実行し、HTML、PDF、PowerPoint、画像をレポジトリ内の Markdown ファイルから生成することができます。
+1. salesforce における画面開発の種類
+2. Lightning web component とは
+3. Lightning web component と Aura の違い
 
 ---
 
-![bg contain left](https://marp.app/assets/marp.svg)
+# salesforce における画面開発の種類
 
-## "Marp" って？
-
-[Marp](https://marp.app/) は Markdown でスライドを作るためのツールです。
-
-このスライドは Markdown で書かれ、Marp CLI で変換されています。
+- テスト
+- tesuto
 
 ---
 
