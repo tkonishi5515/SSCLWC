@@ -22,10 +22,6 @@ footer: "by **＠tkonishi**"
 
 - なにかかく
 
----
-
----
-
 # トピックス
 
 1. salesforce における画面開発の種類
