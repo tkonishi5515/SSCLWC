@@ -27,6 +27,13 @@ footer: "by **＠tkonishi**"
 
 - なにかかく
 
+```mermaid
+sequenceDiagram
+    コック ->> フライパン: ハンバーグを焼く
+    フライパン -->> コック : 焼き上がり
+
+```
+
 ---
 
 # トピックス
@@ -44,6 +51,14 @@ footer: "by **＠tkonishi**"
 - visualforce
 - Aura
 - **Lightning Web Components**
+
+---
+
+# なぜ Lightning Web Components を選択するのか
+
+1. ミリ単位の調整
+2. 外部ライブラリの使用
+3. javascript 開発に慣れている
 
 ---
 
