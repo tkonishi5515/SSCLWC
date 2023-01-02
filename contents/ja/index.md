@@ -50,10 +50,11 @@ footer: "by **＠tkonishi**"
 - Aura
   - 基本は使用しない
 - **Lightning Web Components**
-  - WEB標準な開発 
+  - WEB標準な開発
 
 ---
-
+# salesfoce における画面開発
+- フローが使えないので、絵で書く？
 ---
 
 # なぜ Lightning Web Components を選択するのか
