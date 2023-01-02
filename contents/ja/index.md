@@ -27,17 +27,18 @@ footer: "by **＠tkonishi**"
 
 <!-- Lightning Web Componentsは、apexやvisualforceと違いsalesforce独特ではなく、web標準に基づいている。-->
 
-- summmer19に登場し、はや3年半立ちました。(当時自分はいませんでしたが)
-- フロントの開発では、Auraやvisualforceよりも選択される機会が増えてきていると思うので、少しづつ始めてみましょう!:smile::+1:
+- summmer19 に登場し、はや 3 年半立ちました。
+  (当時自分はいませんでしたが)
+- フロントの開発では、Aura や visualforce よりも選択される機会が増えてきていると思うので、少しづつ始めてみましょう!:smile::+1:
 
 ---
 
 # トピックス
 
 1. salesforce における画面開発の種類
-2. Lightning Web Componentsとは
+2. Lightning Web Components とは
 3. なぜ Lightning Web Components を選択するのか
-4. Lightning Web Components と Aura の違い→いらない？
+4. Lightning Web Components と Aura の違い → いらない？
 
 ---
 
@@ -46,15 +47,18 @@ footer: "by **＠tkonishi**"
 - 画面フロー
   - フローで実現可能な場合こちらをチョイス
 - visualforce
-  - jsp風開発
+  - jsp 風開発
 - Aura
   - 基本は使用しない
 - **Lightning Web Components**
-  - WEB標準な開発
+  - WEB 標準な開発
 
 ---
+
 # salesfoce における画面開発
+
 - フローが使えないので、絵で書く？
+
 ---
 
 # なぜ Lightning Web Components を選択するのか
