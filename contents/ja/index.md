@@ -27,6 +27,7 @@ footer: "by **＠tkonishi**"
 
 - なにかかく
 - androidから更新
+- テスト
 
 ```mermaid
 sequenceDiagram
