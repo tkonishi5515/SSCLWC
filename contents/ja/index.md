@@ -25,15 +25,10 @@ footer: "by **＠tkonishi**"
 
 # はじめに
 
-- Lightning Web Components
+<!-- Lightning Web Componentsは、apexやvisualforceと違いsalesforce独特ではなく、web標準に基づいている。-->
 
-
-```mermaid
-sequenceDiagram
-    コック ->> フライパン: ハンバーグを焼く
-    フライパン -->> コック : 焼き上がり
-
-```
+- summmer19に登場し、はや3年半立ちました。(当時自分はいませんでしたが)
+- フロントの開発では、Auraやvisualforceよりも選択される機会が増えてきていると思うので、少しづつ始めてみましょう!:smile::+1:
 
 ---
 
