@@ -59,15 +59,6 @@ footer: "by **＠tkonishi**"
 
 - フローが使えないので、絵で書く？
 
-```mermaid
-graph TD
-    A[画面開発] -->|開発がしたい| B(画面フロー)
-    B --> C{足らないな}
-    C -->|jsp風開発| D[visualforce]
-    C -->|開発者コンソールを使いたい| E[Aura]
-    C -->|javascriptを使用したい| F[LWC]
-```
-
 ---
 
 # なぜ Lightning Web Components を選択するのか
