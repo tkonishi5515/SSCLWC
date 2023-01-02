@@ -25,9 +25,8 @@ footer: "by **＠tkonishi**"
 
 # はじめに
 
-- なにかかく
-- androidから更新
-- テスト
+- Lightning Web Components
+
 
 ```mermaid
 sequenceDiagram
