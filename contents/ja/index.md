@@ -38,7 +38,7 @@ footer: "by **＠tkonishi**"
 1. salesforce における画面開発の種類
 2. Lightning Web Components とは
 3. なぜ Lightning Web Components を選択するのか
-4. Lightning Web Components と Aura の違い → いらない？
+4. Lightning Web Components と Aura の違い → いらない？?
 
 ---
 
