@@ -27,8 +27,9 @@ footer: "by **＠tkonishi**"
 
 <!-- Lightning Web Componentsは、apexやvisualforceと違いsalesforce独特ではなく、web標準に基づいている。-->
 
-- summmer19 に登場し、はや 3 年半立ちました。
-  (当時自分はいませんでした 😅)
+
+- summmer19 に登場し、はや 3年半立ちました。
+</br>
 - フロントの開発では、Aura や visualforce よりも選択される機会が増えてきていると思うので、少しづつ始めてみましょう!:smile::+1:
 
 ---
@@ -45,19 +46,37 @@ footer: "by **＠tkonishi**"
 # salesforce における画面開発の種類
 
 - 画面フロー
-  - フローで実現可能な場合こちらをチョイス
+  - フローで実現可能な場合こちらを選択
 - visualforce
-  - jsp 風開発
+  - Classicを使用する可能性がある場合
 - Aura
-  - 基本は使用しない
+  - LWCで使用できない箇所のみ使用する
 - **Lightning Web Components**
-  - WEB 標準な開発
+  - 画面フローで再現が不可の場合こちらを選択
 
 ---
 
 # salesfoce における画面開発
 
 - フローが使えないので、絵で書く？
+
+---
+
+
+```mermaid
+flowchart LR
+  net[インターネット\nhttp://foobar.example.com\nhttps://foobar.example.com]
+  subgraph server[開発サーバ - foobar.example.com]
+    Caddy
+    Redmine[Redmine on Docker\nhttp://localhost:10080]
+    Subversion[Subversion on Docker\nhttp://localhost:11080]
+  end
+  LE[Let's Encrypt]
+  net --> Caddy
+  Caddy --> Redmine
+  Caddy --> Subversion
+  Caddy --> |DV証明書取得| LE
+```
 
 ---
 
