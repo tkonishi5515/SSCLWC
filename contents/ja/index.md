@@ -69,8 +69,18 @@ LWCリポジトリhttps://github.com/salesforce/lwc
 - (Auraと比べると)パフォーマンスが良い
 
 ---
-# なぜ Lightning Web Components を選択するのか
-- vscodeで作成される初期のファイル数を貼り付ける
+### なぜ Lightning Web Components を選択するのか
+- LWCで作成されるファイル数
+</br>
+```markdown
+プロジェクト名
+ HTML
+ javascript
+ xml
+ css(任意)
+```
+
+
 
 ---
 ## おまけ
