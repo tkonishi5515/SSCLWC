@@ -48,6 +48,7 @@ theme: gaia
   - saleforce上での見た目はほぼ同じ(LDSデザインで開発可能)
   - classic未対応
   - javascriptを用いた開発
+  - 外部 JavaScript ライブラリの使用可能(静的リソースで読み込ませる)
 ---
 ### Lightning Web Components とAura の違いは？
 - 相違点
