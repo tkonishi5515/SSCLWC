@@ -27,8 +27,8 @@ footer: "by **＠tkonishi**"
 
 <!-- Lightning Web Componentsは、apexやvisualforceと違いsalesforce独特ではなく、web標準に基づいている。-->
 
-
-- summmer19 に登場し、はや 3年半立ちました。
+- どういう方に向けて話すかを記載しても良い
+- summmer19 に登場し、約5年半立ちました。
 </br>
 - フロントの開発では、Aura や visualforce よりも選択される機会が増えてきていると思うので、少しづつ始めてみましょう!:smile::+1:
 
@@ -36,55 +36,32 @@ footer: "by **＠tkonishi**"
 
 # トピックス
 
-1. salesforce における画面開発の種類
-2. Lightning Web Components とは
-3. なぜ Lightning Web Components を選択するのか
-4. Lightning Web Components と Aura の違い → いらない？?
+1. Lightning Web Components とAura の違いは？
+2. なぜ Lightning Web Components を選択するのか
+3. LWCの始め方
+4. 使用した案件の紹介
+5. おまけ
 
 ---
 
-# salesforce における画面開発の種類
+### Lightning Web Components とAura の違いは？
 
-- 画面フロー
-  - フローで実現可能な場合こちらを選択
-- visualforce
-  - Classicを使用する可能性がある場合
-- Aura
-  - LWCで使用できない箇所のみ使用する
-- **Lightning Web Components**
-  - 画面フローで再現が不可の場合こちらを選択
-
+- Auraは開発者コンソールで作成可能だが、LWCはvscodeが必要(サードパーティ製のエディタはあり)
+- LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり
+- ただ、Auraは開発がアーカイブ化されている(サポートはしている)
+Auraリポジトリhttps://github.com/forcedotcom/aura
+LWCリポジトリhttps://github.com/salesforce/lwc
 ---
 
-# salesfoce における画面開発
+### なぜ Lightning Web Components を選択するのか
 
-- フローが使えないので、絵で書く？
-
----
-
-
-```mermaid
-flowchart LR
-  net[インターネット\nhttp://foobar.example.com\nhttps://foobar.example.com]
-  subgraph server[開発サーバ - foobar.example.com]
-    Caddy
-    Redmine[Redmine on Docker\nhttp://localhost:10080]
-    Subversion[Subversion on Docker\nhttp://localhost:11080]
-  end
-  LE[Let's Encrypt]
-  net --> Caddy
-  Caddy --> Redmine
-  Caddy --> Subversion
-  Caddy --> |DV証明書取得| LE
-```
+- (Auraと比べると)開発コミュニティが活発なため、新機能などに期待できる
+- (Auraと比べると)標準的なjavascriptを使用することができるため、javascriptの開発経験がある方は開発しやすい
+- (Auraと比べると)ファイルの数が少なく、初期段階の理解が早い(個人差あり)
 
 ---
-
 # なぜ Lightning Web Components を選択するのか
-
-1. ミリ単位の調整
-2. 外部ライブラリの使用
-3. javascript 開発に慣れている
+- vscodeで作成される初期のファイル数を貼り付ける
 
 ---
 
