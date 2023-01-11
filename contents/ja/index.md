@@ -28,7 +28,7 @@ footer: "by **＠tkonishi**"
 <!-- Lightning Web Componentsは、apexやvisualforceと違いsalesforce独特ではなく、web標準に基づいている。-->
 
 - どういう方に向けて話すかを記載しても良い
-- summmer19 に登場し、約5年半立ちました。
+- summmer19 に登場し、約4年立ちました。
 </br>
 - フロントの開発では、Aura や visualforce よりも選択される機会が増えてきていると思うので、少しづつ始めてみましょう!:smile::+1:
 
@@ -46,6 +46,8 @@ footer: "by **＠tkonishi**"
 
 ### Lightning Web Components とAura の違いは？
 
+- saleforce上での見た目はほぼ同じ(LDSデザインで開発可能)
+- classic未対応
 - Auraは開発者コンソールで作成可能だが、LWCはvscodeが必要(サードパーティ製のエディタはあり)
 - LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり
 - ただ、Auraは開発がアーカイブ化されている(サポートはしている)
@@ -63,6 +65,9 @@ LWCリポジトリhttps://github.com/salesforce/lwc
 # なぜ Lightning Web Components を選択するのか
 - vscodeで作成される初期のファイル数を貼り付ける
 
+---
+## おまけ
+- こちらのスライドはgithub actionを使用して、vscodeでmarkdownを記載するだけでスライドを作成できるように。
 ---
 
 ## Markdown 例
