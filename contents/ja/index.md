@@ -28,6 +28,7 @@ footer: "by **＠tkonishi**"
 <!-- Lightning Web Componentsは、apexやvisualforceと違いsalesforce独特ではなく、web標準に基づいている。-->
 
 - どういう方に向けて話すかを記載しても良い
+- TODO:画像をもう少し増やしても良いかも
 - summmer19 に登場し、約4年立ちました。
 </br>
 - フロントの開発では、Aura や visualforce よりも選択される機会が増えてきていると思うので、少しづつ始めてみましょう!:smile::+1:
@@ -74,6 +75,9 @@ LWCリポジトリhttps://github.com/salesforce/lwc
 ---
 ## おまけ
 - こちらのスライドはgithub actionを使用して、vscodeでmarkdownを記載するだけでスライドを作成できるように。
+
+または
+- LWCのOSS版紹介
 ---
 
 ## Markdown 例
