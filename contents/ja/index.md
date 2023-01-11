@@ -73,11 +73,11 @@ LWCリポジトリhttps://github.com/salesforce/lwc
 - LWCで作成されるファイル数
 </br>
 ```markdown
-プロジェクト名
- HTML
- javascript
- xml
- css(任意)
+プロジェクト名(任意で設定可能)
+ |-HTML
+ |-javascript
+ |-xml
+ |-css(任意)
 ```
 
 
