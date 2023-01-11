@@ -2,8 +2,6 @@
 marp: true
 paginate: true
 theme: gaia
-header: "**Lightning Web Components** __について__"
-footer: "by **＠tkonishi**"
 ---
 
 <!-- _paginate: false -->
