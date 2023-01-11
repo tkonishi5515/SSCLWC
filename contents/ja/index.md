@@ -45,12 +45,16 @@ footer: "by **＠tkonishi**"
 ---
 
 ### Lightning Web Components とAura の違いは？
-
-- saleforce上での見た目はほぼ同じ(LDSデザインで開発可能)
-- classic未対応
-- Auraは開発者コンソールで作成可能だが、LWCはvscodeが必要(サードパーティ製のエディタはあり)
-- LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり
-- ただ、Auraは開発がアーカイブ化されている(サポートはしている)
+- 共通箇所
+  - saleforce上での見た目はほぼ同じ(LDSデザインで開発可能)
+  - classic未対応
+  - javascriptを用いた開発
+---
+### Lightning Web Components とAura の違いは？
+- 相違点
+  - Auraは開発者コンソールで作成可能だが、LWCはvscodeが必要(サードパーティ製のエディタはあり)
+  - LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり
+  - ただ、Auraは開発がアーカイブ化されている(サポートはしている)
 Auraリポジトリhttps://github.com/forcedotcom/aura
 LWCリポジトリhttps://github.com/salesforce/lwc
 ---
@@ -59,7 +63,9 @@ LWCリポジトリhttps://github.com/salesforce/lwc
 
 - (Auraと比べると)開発コミュニティが活発なため、新機能などに期待できる
 - (Auraと比べると)標準的なjavascriptを使用することができるため、javascriptの開発経験がある方は開発しやすい
+  - また、(Auraに比べると)直感的なため学習コストが低い
 - (Auraと比べると)ファイルの数が少なく、初期段階の理解が早い(個人差あり)
+- (Auraと比べると)パフォーマンスが良い
 
 ---
 # なぜ Lightning Web Components を選択するのか
