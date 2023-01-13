@@ -57,8 +57,8 @@ theme: gaia
   - Auraは開発者コンソールで作成可能だが、LWCはvscodeが必要(chromeの拡張機能で開発は可能)
   - LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり
   - ただ、Auraは開発がアーカイブ化されている(サポートはしている)
-[Auraリポジトリ](https://github.com/forcedotcom/aura)
-[LWCリポジトリ](https://github.com/salesforce/lwc)
+[Aura開発リポジトリ](https://github.com/forcedotcom/aura)
+[LWC開発リポジトリ](https://github.com/salesforce/lwc)
 ---
 ### Lightning Web Components とAura の違いは？
 - Visualforceとの比較
