@@ -54,7 +54,8 @@ theme: gaia
 ---
 ### Lightning Web Components とAura の違いは？
 - 相違点
-  - Auraは開発者コンソールで作成可能だが、LWCはvscodeが必要(chromeの拡張機能で開発は可能)
+  - Auraは開発者コンソールで作成可能だが、LWCはvsCodeが必要(chromeの拡張機能で開発は可能)
+  - LWCはユニットテスト[Jest](https://jestjs.io/ja/)に対応している
   - LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり
   - ただ、Auraは開発がアーカイブ化されている(サポートはしている)
 [Aura開発リポジトリ](https://github.com/forcedotcom/aura)
@@ -137,6 +138,9 @@ export default class Test extends LightningElement {}
 
 ---
 ### 使用した案件の紹介
+- ルックアップ検索条件の絞りが画面フローでは対応できずLWCにて作成
+- 飲食店の地図情報を詳細ページに表示するためLWCを使用
+- experience cloud上で、webページ構築
 
 
 ---
