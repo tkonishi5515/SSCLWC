@@ -37,26 +37,40 @@ theme: gaia
 
 1. Lightning Web Components とAura の違いは？
 2. なぜ Lightning Web Components を選択するのか
-3. LWCの始め方
+3. LWCの始め方 いらない気がする
 4. 使用した案件の紹介
 5. おまけ
 
 ---
 
 ### Lightning Web Components とAura の違いは？
-- 共通箇所
+- 共通点
   - saleforce上での見た目はほぼ同じ(LDSデザインで開発可能)
   - classic未対応
   - javascriptを用いた開発
   - 外部 JavaScript ライブラリの使用可能(静的リソースで読み込ませる)
+  - [Tailwind CSS](https://tailwindcss.com/)のようにクラス名でスタイルを与えることができる
+    - そのため、CSSファイルはLDSでよければ不要
 ---
 ### Lightning Web Components とAura の違いは？
 - 相違点
-  - Auraは開発者コンソールで作成可能だが、LWCはvscodeが必要(サードパーティ製のエディタはあり)
+  - Auraは開発者コンソールで作成可能だが、LWCはvscodeが必要(chromeの拡張機能で開発は可能)
   - LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり
   - ただ、Auraは開発がアーカイブ化されている(サポートはしている)
-Auraリポジトリhttps://github.com/forcedotcom/aura
-LWCリポジトリhttps://github.com/salesforce/lwc
+[Auraリポジトリ](https://github.com/forcedotcom/aura)
+[LWCリポジトリ](https://github.com/salesforce/lwc)
+---
+### Lightning Web Components とAura の違いは？
+- Visualforceとの比較
+  - 共通点
+    - あまりない
+  - 相違点
+    - コントローラーがLWCはJavaScript(ブラウザ動作),VFはApex(サーバ動作)
+      そのため、LWCのパフォーマンスが良い
+---
+### なぜ Lightning Web Components を選択するのか
+# 新しいから
+
 ---
 
 ### なぜ Lightning Web Components を選択するのか
@@ -70,15 +84,59 @@ LWCリポジトリhttps://github.com/salesforce/lwc
 ---
 ### なぜ Lightning Web Components を選択するのか
 - LWCで作成されるファイル数
-</br>
 ```markdown
 プロジェクト名(任意で設定可能)
  |-HTML
- |-javascript
+ |-JavaScript
  |-xml
  |-css(任意)
 ```
+---
+### なぜ Lightning Web Components を選択するのか
+- Auraで作成されるファイル数
+  - 全部が必要なわけではないが。。。
+```markdown
+プロジェクト名(任意で設定可能)
+ |-auradoc
+ |-cmp(HTML)
+ |-cmp-meta.xml
+ |-css
+ |-design
+ |-svg
+ |-Controller.js
+ |-Helper.js
+ |-Render.js
+ ```
+---
+### なぜ Lightning Web Components を選択するのか
+```html
+<template>
+    
+</template>
+```
+```javascript
+import { LightningElement } from 'lwc';
 
+export default class Test extends LightningElement {}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>false</isExposed>
+</LightningComponentBundle>
+```
+
+---
+### LWCの始め方
+1. salesforce CLIのインストール
+2. vsCodeのインストール
+3. vsCode内でSalesforce Extension Packをインストールする
+4. ctrl + shift + P を押下し、新規プロジェクトを作成
+5. ctrl + shift + P を押下し、新規LWCを
+
+---
+### 使用した案件の紹介
 
 
 ---
