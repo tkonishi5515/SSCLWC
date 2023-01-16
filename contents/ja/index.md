@@ -47,7 +47,7 @@ theme: gaia
 - 共通点
   - saleforce上での見た目はほぼ同じ([LDS](https://www.lightningdesignsystem.com/)を標準で使用)
   - classic未対応
-  - javascriptを用いた開発
+  - JavaScriptを用いた開発
   - 外部 JavaScript ライブラリの使用可能(静的リソースで読み込ませる,npmは不可)
   - [Tailwind CSS](https://tailwindcss.com/)のようにクラス名でスタイルを与えることができる
     - そのため、CSSファイルはLDSでよければ不要
@@ -78,7 +78,7 @@ theme: gaia
 ### なぜ Lightning Web Components を選択するのか
 
 - (Auraと比べると)開発コミュニティが活発なため、新機能などに期待できる
-- (Auraと比べると)標準的なjavascriptを使用することができるため、javascriptの開発経験がある方は開発しやすい
+- (Auraと比べると)標準的なJavaScriptを使用することができるため、JavaScriptの開発経験がある方は開発しやすい
   - また、(Auraに比べると)直感的なため学習コストが低い
 - (Auraと比べると)ファイルの数が少なく、初期段階の理解が早い(個人差あり)
 - (Auraと比べると)パフォーマンスが良い
@@ -116,7 +116,7 @@ theme: gaia
     {hello}
 </template>
 ```
-```javascript
+```JavaScript
 import { LightningElement } from 'lwc';
 
 export default class Test extends LightningElement {
