@@ -27,7 +27,7 @@ theme: gaia
 
 - どういう方に向けて話すかを記載しても良い
 - TODO:画像をもう少し増やしても良いかも
-- summmer19 に登場し、約4年立ちました。
+- Summmer '19 に登場し、約4年立ちました。
 </br>
 - フロントの開発では、Aura や visualforce よりも選択される機会が増えてきていると思うので、少しづつ始めてみましょう!:smile::+1:
 
@@ -35,24 +35,35 @@ theme: gaia
 
 # トピックス
 
-1. Lightning Web Components とAura の違いは？
-2. なぜ Lightning Web Components を選択するのか
-3. LWCの始め方 いらない気がする
-4. 使用した案件の紹介
-5. おまけ
+1. 画面開発の歴史
+2. Lightning Web Components と Aura の違いは？
+3. なぜ Lightning Web Components を選択するのか
+4. LWCの始め方 いらない気がする
+5. 使用した案件の紹介
+6. おまけ
 
 ---
+### 画面開発の歴史
+- Visualforce
+  - Summer '08 くらい？
+- Lightning Aura Components
+  - Auraと記載される
+  - 
+- Lightning Web Components
+  - LWCと記載される
+  - Summmer '19
+---
 
-### Lightning Web Components とAura の違いは？
+### Lightning Web Components と Aura の違いは？
 - 共通点
   - saleforce上での見た目はほぼ同じ([LDS](https://www.lightningdesignsystem.com/)を標準で使用)
   - classic未対応
   - JavaScriptを用いた開発
-  - 外部 JavaScript ライブラリの使用可能(静的リソースで読み込ませる,npmは不可)
+  - 外部 JavaScript ライブラリの[使用可能](https://qiita.com/stomita/items/2cfa4db77c543f47d33c)(静的リソースで読み込ませる,npmは不可)
   - [Tailwind CSS](https://tailwindcss.com/)のようにクラス名でスタイルを与えることができる
     - そのため、CSSファイルはLDSでよければ不要
 ---
-### Lightning Web Components とAura の違いは？
+### Lightning Web Components と Aura の違いは？
 - 相違点
   - Auraは開発者コンソールで作成可能だが、LWCはvsCodeが必要(chromeの拡張機能で開発は可能)
   - LWCはユニットテスト[Jest](https://jestjs.io/ja/)に対応している
@@ -61,7 +72,7 @@ theme: gaia
 [Aura開発リポジトリ](https://github.com/forcedotcom/aura)
 [LWC開発リポジトリ](https://github.com/salesforce/lwc)
 ---
-### Lightning Web Components とAura の違いは？
+### Lightning Web Components と Aura の違いは？
 - Visualforceとの比較
   - 共通点
     - あまりない
