@@ -37,7 +37,7 @@ theme: gaia
 1. 画面開発の歴史
 2. Lightning Web Components と Aura の違いは？
 3. なぜ Lightning Web Components を選択するのか
-4. LWCの始め方 いらない気がする
+4. 案件紹介
 5. 作成した Lightning Web Components の紹介
 6. おまけ
 
@@ -141,7 +141,7 @@ export default class Test extends LightningElement {
 ```
 
 ---
-### LWCの始め方
+### LWCの始め方 → 案件紹介に変更する
 1. salesforce CLIのインストール
 2. vsCodeのインストール
 3. vsCode内でSalesforce Extension Packをインストールする
