@@ -9,12 +9,10 @@ theme: gaia
 <!-- ![w:2000](https://www.nearpartner.com/wp-content/uploads/2019/02/LWC-salesforce.png) -->
 
 # Lightning Web Componets について <!-- fit -->
-
 </br>
 </br>
 
 ![Slides are here](images/qrcode.png)
-
 ##### スライド:https://powerninja.github.io/SSCLWC/ja/index.html
 
 ##### リポジトリ:https://github.com/powerninja/SSCLWC
@@ -25,13 +23,13 @@ theme: gaia
 
 <!-- Lightning Web Componentsは、apexやvisualforceと違いsalesforce独特ではなく、web標準に基づいている。-->
 
-- Lightning Web Components
 <!-- TODO: 初めにいらない気がする-->
 - TODO:勉強会環境にdemoを用意する
 - Summmer '19 に登場し、約4年立ちました。
 </br>
-- フロントの開発では、Aura や visualforce よりも選択される機会が増えてきていると思うので、少しづつ始めてみましょう
+- フロントの開発では、Aura や Visualforce よりも選択される機会が増えてきていると思うので、興味のある方は触ってみてください。
 
+- 今回Lightning Web Components の開発を行うための環境構築等の詳細な説明はしません。
 ---
 
 # トピックス
@@ -40,7 +38,7 @@ theme: gaia
 2. Lightning Web Components と Aura の違いは？
 3. なぜ Lightning Web Components を選択するのか
 4. LWCの始め方 いらない気がする
-5. 使用した案件の紹介
+5. 作成した Lightning Web Components の紹介
 6. おまけ
 
 ---
@@ -49,7 +47,7 @@ theme: gaia
   - Summer '08 くらい？
 - Lightning Aura Components
   - Auraと記載される
-  - 
+  - 2014くらいに発表？
 - Lightning Web Components
   - LWCと記載される
   - Summmer '19
@@ -57,19 +55,19 @@ theme: gaia
 
 ### Lightning Web Components と Aura の違いは？
 - 共通点
-  - saleforce上での見た目はほぼ同じ([LDS](https://www.lightningdesignsystem.com/)を標準で使用)
+  - Saleforce上での見た目はほぼ同じ([LDS](https://www.lightningdesignsystem.com/)を標準で使用)
   - classic未対応
   - JavaScriptを用いた開発
-  - 外部 JavaScript ライブラリの[使用可能](https://qiita.com/stomita/items/2cfa4db77c543f47d33c)(静的リソースで読み込ませる,npmは不可)
+  - 外部 JavaScript ライブラリの[使用可能](https://qiita.com/stomita/items/2cfa4db77c543f47d33c)(静的リソースで読み込ませるnpmは不可)
   - [Tailwind CSS](https://tailwindcss.com/)のようにクラス名でスタイルを与えることができる
     - そのため、CSSファイルはLDSでよければ不要
 ---
 ### Lightning Web Components と Aura の違いは？
 - 相違点
-  - Auraは開発者コンソールで作成可能だが、LWCはvsCodeが必要(chromeの拡張機能で開発は可能)
+  - Auraは開発者コンソールで作成可能だが、LWCはVisual Studio Codeが必要(chromeの拡張機能で開発は可能)
   - LWCはユニットテスト[Jest](https://jestjs.io/ja/)に対応している
-  - LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり
-  - ただ、Auraは開発がアーカイブ化されている(サポートはしている)
+  - LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり(モバイル対応など)
+  - Auraは開発がアーカイブ化されている(サポートはしている)
 [Aura開発リポジトリ](https://github.com/forcedotcom/aura)
 [LWC開発リポジトリ](https://github.com/salesforce/lwc)
 ---
@@ -78,21 +76,20 @@ theme: gaia
   - 共通点
     - あまりない
   - 相違点
-    - LDSを使用する場合でも、cssで指定が必要
-    - コントローラーがLWCはJavaScript(ブラウザ動作),VFはApex(サーバ動作)
+    - コントローラーがLWCはJavaScript(ブラウザ動作),Visualforceとの比較はApex(サーバ動作)
       そのため、LWCのパフォーマンスが良い
 ---
 ### なぜ Lightning Web Components を選択するのか
-# 新しいから
+# 新しく更新されるから
 
 ---
 
 ### なぜ Lightning Web Components を選択するのか
 
-- (Auraと比べると)開発コミュニティが活発なため、新機能などに期待できる
-- (Auraと比べると)標準的なJavaScriptを使用することができるため、JavaScriptの開発経験がある方は開発しやすい
-  - また、(Auraに比べると)直感的なため学習コストが低い
-- (Auraと比べると)ファイルの数が少なく、初期段階の理解が早い(個人差あり)
+- 開発コミュニティが活発なため、新機能などに期待できる
+- 標準的なJavaScriptを使用することができるため、JavaScriptの開発経験がある方は開発しやすい
+  - そのため、学習コストが低い
+- ファイルの数が少なく、初期段階の理解が早い(個人差あり)
 - (Auraと比べると)パフォーマンスが良い
 
 ---
@@ -125,7 +122,7 @@ theme: gaia
 ###### なぜ Lightning Web Components を選択するのか
 ```html
 <template>
-    {hello}
+    <div slds-p-left_xx-large>{hello}</div>
 </template>
 ```
 ```JavaScript
@@ -139,7 +136,7 @@ export default class Test extends LightningElement {
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>56.0</apiVersion>
-    <isExposed>false</isExposed>
+    <isExposed>true</isExposed>
 </LightningComponentBundle>
 ```
 
@@ -149,13 +146,11 @@ export default class Test extends LightningElement {
 2. vsCodeのインストール
 3. vsCode内でSalesforce Extension Packをインストールする
 4. ctrl + shift + P を押下し、新規プロジェクトを作成
-5. ctrl + shift + P を押下し、新規LWCを
+5. ctrl + shift + P を押下し、新規LWCを作成する
 
 ---
-### 使用した案件の紹介
-- ルックアップ検索条件の絞りが画面フローでは対応できずLWCにて作成
-- 飲食店の地図情報を詳細ページに表示するためLWCを使用
-- experience cloud上で、webページ構築
+### 作成した Lightning Web Components の紹介
+- 勉強会の環境に一部デプロイあり
 
 
 ---
@@ -164,65 +159,5 @@ export default class Test extends LightningElement {
 
 または
 - LWCのOSS版紹介
----
-
-## Markdown 例
-
-```markdown
----
-marp: true
-paginate: true
----
-
-<!-- _paginate: false -->
-
-# About [Marp CLI Action](https://github.com/KoharaKazuya/marp-cli-action) <!-- fit -->
-
----
-
-## [Marp CLI Action](https://github.com/KoharaKazuya/marp-cli-action) is...
-```
-
-[このスライドのソース](https://github.com/KoharaKazuya/marp-cli-action/blob/main/examples/ja/about-marp-cli-action.md) を参照してください。
-
----
-
-## "Marp CLI Action" は何を提供するの？
-
-GitHub Action として [Marp CLI](https://github.com/marp-team/marp-cli) を実行します。
-
-リポジトリ内の Markdown ファイルから HTML、PDF、PowerPoint、画像を生成の自動化を素早く簡単にセットアップできます。
-
----
-
-## 使い方
-
-1. ワークフローに以下を追加します
-
-```yaml
-- uses: KoharaKazuya/marp-cli-action@v1
-```
-
-または
-
-1. [このテンプレート](https://github.com/KoharaKazuya/marp-cli-action-gh-pages-template) を使用し、リポジトリを作成します
-2. Marp の Markdown を書きます
-3. コミットし、プッシュします
-
-_Marp CLI Action は Markdown からファイルを生成するのみです。アップロード、リリース、公開などをしたい場合は他のアクションを使いましょう。_
-
----
-
-## オプション
-
-[`action.yml`](https://github.com/KoharaKazuya/marp-cli-action/blob/main/action.yml) の `inputs` セクションを参照してください。
-
-Marp CLI をカスタマイズするには [`marp.config.json`、`marp.config.cjs`、`.marprc` といった Marp CLI の設定ファイル](https://github.com/marp-team/marp-cli/blob/master/README.md#configuration-file) を使用してください。
-
-設定ファイルはリポジトリルートに置くか、`config-file` input を指定します。
-
-_日本語ユーザーへ; Marp CLI オプションとして `lang: ja-JP` を指定してください。そうした場合、Marp CLI Action は CJK フォント問題を修正します。_
-
----
 
 # 楽しくスライドを書こう！ :v: <!--fit-->
