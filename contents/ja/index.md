@@ -1,10 +1,14 @@
 ---
 marp: true
 paginate: true
-theme: gaia
+theme: freud
+
+
 ---
 
 <!-- _paginate: false -->
+<!-- theme: gradient class: blue-->
+<!-- theme: freud class: blue-->
 
 <!-- ![w:2000](https://www.nearpartner.com/wp-content/uploads/2019/02/LWC-salesforce.png) -->
 
@@ -36,7 +40,7 @@ theme: gaia
 6. おまけ
 
 ---
-### Salesforce における画面開発の歴史
+# Salesforce における画面開発の歴史
 - Visualforce
   - Summer '08 くらい？
 - Lightning Aura Components
@@ -47,7 +51,7 @@ theme: gaia
   - Summmer '19
 ---
 
-### Lightning Web Components と Aura の違いは？
+# Lightning Web Components と Aura の違いは？
 - 共通点
   - Saleforce上での見た目はほぼ同じ([LDS](https://www.lightningdesignsystem.com/)を標準で使用)
   - classic未対応
@@ -56,7 +60,7 @@ theme: gaia
   - [Tailwind CSS](https://tailwindcss.com/)のようにクラス名でスタイルを与えることができる
     - そのため、LDSでよければCSSファイルは不要
 ---
-### Lightning Web Components と Aura の違いは？
+# Lightning Web Components と Aura の違いは？
 - 相違点
   - Auraは開発者コンソールで作成可能だが、LWCはVisual Studio Codeが必要(chromeの拡張機能で開発は可能)
   - LWCはユニットテスト[Jest](https://jestjs.io/ja/)に対応している
@@ -65,7 +69,7 @@ theme: gaia
 [Aura開発リポジトリ](https://github.com/forcedotcom/aura)
 [LWC開発リポジトリ](https://github.com/salesforce/lwc)
 ---
-### Lightning Web Components と Aura の違いは？
+# Lightning Web Components と Aura の違いは？
 - Visualforceとの比較
   - 共通点
     - あまりない
@@ -73,13 +77,13 @@ theme: gaia
     - コントローラーがLWCはJavaScript(ブラウザ動作),Visualforceとの比較はApex(サーバ動作)
       そのため、LWCのパフォーマンスが良い
 ---
-### Lightning Web Components と Aura の違いは？
+# Lightning Web Components と Aura の違いは？
 - 画面フローとの比較
   - 画面フローで実装可能な場合画面フローを使用することが望ましい
   - ただ、ソースレビューを行いたい場合や、マージリクエストベース開発を行いたい場合はLWCの方がスムーズに開発を行える
   - ブラウザの機能(localStorageなど)を使用したい場合はLWCを使用することになる
 ---
-### なぜ Lightning Web Components を選択するのか
+# なぜ Lightning Web Components を選択するのか
 - Aura
   - アーカイブ化されている(そのうちプロセスビルダーのように廃止されるかも？)
 - Visualforce
@@ -90,7 +94,7 @@ theme: gaia
 
 ---
 
-### なぜ Lightning Web Components を選択するのか
+# なぜ Lightning Web Components を選択するのか
 
 - 開発コミュニティが活発なため、新機能などに期待できる
 - 標準的なJavaScriptを使用することができるため、JavaScriptの開発経験がある方は開発しやすい
@@ -99,7 +103,7 @@ theme: gaia
 - (Aura,Visualforceと比べると)パフォーマンスが良い
 
 ---
-### なぜ Lightning Web Components を選択するのか
+# なぜ Lightning Web Components を選択するのか
 - LWCで作成されるファイル数
 ```markdown
 プロジェクト名(任意で設定可能)
@@ -111,7 +115,7 @@ theme: gaia
     └ プロジェクト名.test.js
 ```
 ---
-### なぜ Lightning Web Components を選択するのか
+# なぜ Lightning Web Components を選択するのか
 - Auraで作成されるファイル数
   - 全部が必要なわけではないが。。。
 ```markdown
@@ -127,7 +131,7 @@ theme: gaia
  └ Render.js
  ```
 ---
-###### なぜ Lightning Web Components を選択するのか
+# なぜ Lightning Web Components を選択するのか
 ```html
 <template>
     <div slds-p-left_xx-large>{hello}</div>
@@ -149,7 +153,7 @@ export default class Test extends LightningElement {
 ```
 
 ---
-### LWCを使用した案件紹介
+# LWCを使用した案件紹介
 1. Experience CloudにB to C と B to B 向けのWebページを開発
   - B to C のページは独自のデザインだったため、CSSを使用していた
   - B to B の方はLDSだったが、ソースレビューやGitHubで管理を行いたかったためLWCで開発をおこなった
@@ -158,12 +162,12 @@ export default class Test extends LightningElement {
   - その後、保存ボタンを動的に動かしたり、項目全て入力されたら保存ボタンの色を変えたりと色々した
 
 ---
-### 作成した Lightning Web Components の紹介
+# 作成した Lightning Web Components の紹介
 - 勉強会の環境に一部デプロイあり
 
 
 ---
-## おまけ
+# おまけ
 - LWCはSalesforce の外でも使用することが可能
 - [lwc.dev](https://lwc.dev/)というwebページがあり、こちらに詳細が記載されている。
 - Herokuやwebサーバーにデプロイすることで使用可能
