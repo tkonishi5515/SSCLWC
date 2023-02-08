@@ -26,7 +26,8 @@ theme: freud
 # はじめに
 #### 今回の質問内容
 > ・ Lightning Web コンポーネント（＝LWC？auraとwebは何が違う？）
-- Lightning Web Componentsの簡単な説明とAuraとの比較を行います
+- Lightning Web コンポーネント = LWCです
+- Lightning Web Components の簡単な説明とAuraとの比較を行います
 - 今回 Lightning Web Components の開発を行うための環境構築等の詳細な説明はしません
 ---
 
