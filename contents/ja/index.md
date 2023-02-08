@@ -20,29 +20,23 @@ theme: gaia
 ---
 
 # はじめに
-
-<!-- Lightning Web Componentsは、apexやvisualforceと違いsalesforce独特ではなく、web標準に基づいている。-->
-
-<!-- TODO: 初めにいらない気がする-->
-- TODO:勉強会環境にdemoを用意する
-- Summmer '19 に登場し、約4年立ちました。
-</br>
-- フロントの開発では、Aura や Visualforce よりも選択される機会が増えてきていると思うので、興味のある方は触ってみてください。
-
-- 今回Lightning Web Components の開発を行うための環境構築等の詳細な説明はしません。
+#### 今回の質問内容
+> ・ Lightning Web コンポーネント（＝LWC？auraとwebは何が違う？）
+- Lightning Web Componentsの簡単な説明とauraとの比較を行います
+- 今回 Lightning Web Components の開発を行うための環境構築等の詳細な説明はしません
 ---
 
 # トピックス
 
-1. 画面開発の歴史
+1. Salesforce における画面開発の歴史
 2. Lightning Web Components と Aura の違いは？
 3. なぜ Lightning Web Components を選択するのか
-4. 案件紹介
+4. LWCを使用した案件紹介
 5. 作成した Lightning Web Components の紹介
 6. おまけ
 
 ---
-### 画面開発の歴史
+### Salesforce における画面開発の歴史
 - Visualforce
   - Summer '08 くらい？
 - Lightning Aura Components
@@ -57,16 +51,16 @@ theme: gaia
 - 共通点
   - Saleforce上での見た目はほぼ同じ([LDS](https://www.lightningdesignsystem.com/)を標準で使用)
   - classic未対応
-  - JavaScriptを用いた開発
-  - 外部 JavaScript ライブラリの[使用可能](https://qiita.com/stomita/items/2cfa4db77c543f47d33c)(静的リソースで読み込ませるnpmは不可)
+  - HTMLとJavaScriptを用いた開発
+  - 外部 JavaScript ライブラリの[使用可能](https://qiita.com/stomita/items/2cfa4db77c543f47d33c)(静的リソースで読み込ませる)
   - [Tailwind CSS](https://tailwindcss.com/)のようにクラス名でスタイルを与えることができる
-    - そのため、CSSファイルはLDSでよければ不要
+    - そのため、LDSでよければCSSファイルは不要
 ---
 ### Lightning Web Components と Aura の違いは？
 - 相違点
   - Auraは開発者コンソールで作成可能だが、LWCはVisual Studio Codeが必要(chromeの拡張機能で開発は可能)
   - LWCはユニットテスト[Jest](https://jestjs.io/ja/)に対応している
-  - LWCで対応していない機能がまだある、その場合はAuraを作成する必要あり(モバイル対応など)
+  - LWCで対応していない機能がまだある、その場合はAuraを使用する必要あり(一部モバイル対応など)
   - Auraは開発がアーカイブ化されている(サポートはしている)
 [Aura開発リポジトリ](https://github.com/forcedotcom/aura)
 [LWC開発リポジトリ](https://github.com/salesforce/lwc)
@@ -79,8 +73,20 @@ theme: gaia
     - コントローラーがLWCはJavaScript(ブラウザ動作),Visualforceとの比較はApex(サーバ動作)
       そのため、LWCのパフォーマンスが良い
 ---
+### Lightning Web Components と Aura の違いは？
+- 画面フローとの比較
+  - 画面フローで実装可能な場合画面フローを使用することが望ましい
+  - ただ、ソースレビューを行いたい場合や、マージリクエストベース開発を行いたい場合はLWCの方がスムーズに開発を行える
+  - ブラウザの機能(localStorageなど)を使用したい場合はLWCを使用することになる
+---
 ### なぜ Lightning Web Components を選択するのか
-# 新しいから
+- Aura
+  - アーカイブ化されている(そのうちプロセスビルダーのように廃止されるかも？)
+- Visualforce
+  - web標準のHTMLではない
+  - コントローラーがApexのためパフォーマンスが良くない
+- Lightning Web Components
+  - 今から学習するのであれば、消去法でLWCが良い
 
 ---
 
@@ -88,19 +94,21 @@ theme: gaia
 
 - 開発コミュニティが活発なため、新機能などに期待できる
 - 標準的なJavaScriptを使用することができるため、JavaScriptの開発経験がある方は開発しやすい
-  - そのため、学習コストが低い
-- ファイルの数が少なく、初期段階の理解が早い(個人差あり)
-- (Auraと比べると)パフォーマンスが良い
+  - そのため、学習コストが低い & Web開発を行う際に役立つかも？
+- LWC開発時に必要なファイルの数が少なく、初期段階の理解が早い(個人差あり)
+- (Aura,Visualforceと比べると)パフォーマンスが良い
 
 ---
 ### なぜ Lightning Web Components を選択するのか
 - LWCで作成されるファイル数
 ```markdown
 プロジェクト名(任意で設定可能)
- |-HTML
- |-JavaScript
- |-xml
- |-css(任意)
+ ├ HTML
+ ├ JavaScript
+ ├ xml
+ ├ css(任意)
+ └ Jestフォルダ
+    └ プロジェクト名.test.js
 ```
 ---
 ### なぜ Lightning Web Components を選択するのか
@@ -108,15 +116,15 @@ theme: gaia
   - 全部が必要なわけではないが。。。
 ```markdown
 プロジェクト名(任意で設定可能)
- |-auradoc
- |-cmp(HTML)
- |-cmp-meta.xml
- |-css
- |-design
- |-svg
- |-Controller.js
- |-Helper.js
- |-Render.js
+ ├ auradoc
+ ├ cmp(HTML)
+ ├ cmp-meta.xml
+ ├ css
+ ├ design
+ ├ svg
+ ├ Controller.js
+ ├ Helper.js
+ └ Render.js
  ```
 ---
 ###### なぜ Lightning Web Components を選択するのか
@@ -141,12 +149,13 @@ export default class Test extends LightningElement {
 ```
 
 ---
-### LWCの始め方 → 案件紹介に変更する
-1. salesforce CLIのインストール
-2. vsCodeのインストール
-3. vsCode内でSalesforce Extension Packをインストールする
-4. ctrl + shift + P を押下し、新規プロジェクトを作成
-5. ctrl + shift + P を押下し、新規LWCを作成する
+### LWCを使用した案件紹介
+1. Experience CloudにB to C と B to B 向けのWebページを開発
+  - B to C のページは独自のデザインだったため、CSSを使用していた
+  - B to B の方はLDSだったが、ソースレビューやGitHubで管理を行いたかったためLWCで開発をおこなった
+2. ルックアップ検索条件に表示されるレコードの条件を変更したい
+  - 画面フローでは実装不可だったためLWCを使用した
+  - その後、保存ボタンを動的に動かしたり、項目全て入力されたら保存ボタンの色を変えたりと色々した
 
 ---
 ### 作成した Lightning Web Components の紹介
@@ -155,9 +164,8 @@ export default class Test extends LightningElement {
 
 ---
 ## おまけ
-- こちらのスライドはgithub actionを使用して、vscodeでmarkdownを記載するだけでスライドを作成できるように。
-
-または
-- LWCのOSS版紹介
-
-# 楽しくスライドを書こう！ :v: <!--fit-->
+- LWCはSalesforce の外でも使用することが可能
+- [lwc.dev](https://lwc.dev/)というwebページがあり、こちらに詳細が記載されている。
+- Herokuやwebサーバーにデプロイすることで使用可能
+- Salesforceと関係が一切ないがメインのHTMLとJavaScriptの書き方はほぼ同じ
+- 興味のある方は「OSS LWC」などで検索してみてください
