@@ -1,4 +1,5 @@
 ---
+title: Lightning Web Componets について
 marp: true
 paginate: true
 theme: freud
