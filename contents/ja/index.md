@@ -11,7 +11,6 @@ theme: freud
 <!-- theme: gradient class: blue-->
 <!-- theme: freud class: blue-->
 
-<!-- ![w:2000](https://www.nearpartner.com/wp-content/uploads/2019/02/LWC-salesforce.png) -->
 
 # Lightning Web Componets について <!-- fit -->
 </br>
