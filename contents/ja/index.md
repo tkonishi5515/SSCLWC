@@ -80,7 +80,7 @@ theme: gaia
       そのため、LWCのパフォーマンスが良い
 ---
 ### なぜ Lightning Web Components を選択するのか
-# 新しく更新されるから
+# 新しいから
 
 ---
 
