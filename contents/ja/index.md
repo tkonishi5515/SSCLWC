@@ -213,3 +213,10 @@ export default class Test extends LightningElement {
 - Heroku や web サーバーにデプロイすることで使用可能
 - メインの HTML と JavaScript の書き方はほぼ同じ
 - 興味のある方は「OSS LWC」などで検索してみてください
+
+---
+
+# まとめ
+
+- Aura と LWC の違いはさまざまあるが、基本 LWC を使用しよう
+- 画面フローで実装可能な場合は、画面フローで実装しよう
