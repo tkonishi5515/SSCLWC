@@ -61,19 +61,19 @@ theme: freud
 # Lightning Web Components と Aura の違いは？
 
 - 共通点
-  - Saleforce 上での見た目はほぼ同じ([LDS](https://www.lightningdesignsystem.com/)を標準で使用)
+  - Saleforce 上での見た目はほぼ同じ([SLDS](https://www.lightningdesignsystem.com/)を標準で使用)
   - classic 未対応
   - HTML と JavaScript を用いた開発
-  - 外部 JavaScript ライブラリの[使用可能](https://qiita.com/stomita/items/2cfa4db77c543f47d33c)(静的リソースで読み込ませる)
+  - 外部 JavaScript ライブラリの[使用可能](https://developer.salesforce.com/docs/component-library/documentation/ja-jp/56.0/lwc/lwc.js_third_party_library)(静的リソースで読み込ませる)
   - [Tailwind CSS](https://tailwindcss.com/)のようにクラス名でスタイルを与えることができる
-    - そのため、LDS でよければ CSS ファイルは不要
+    - そのため、SLDS でよければ CSS ファイルは不要
 
 ---
 
 # Lightning Web Components と Aura の違いは？
 
 - 相違点
-  - Aura は開発者コンソールで作成可能だが、LWC は Visual Studio Code が必要(chrome の拡張機能で開発は可能)
+  - Aura は開発者コンソールで作成・開発が可能だが、LWC は Visual Studio Code が必要([Chrome の拡張機能](https://chrome.google.com/webstore/detail/lightning-studio/ehkpneicmpbdejpoancidgkejlkahjgo?hl=ja)で代替品有)
   - LWC はユニットテスト[Jest](https://jestjs.io/ja/)に対応している
   - LWC で対応していない機能がまだある、その場合は Aura を使用する必要あり(一部モバイル対応など)
   - Aura は開発がアーカイブ化されている(サポートはしている)
@@ -88,8 +88,9 @@ theme: freud
   - 共通点
     - あまりない
   - 相違点
-    - コントローラーが LWC は JavaScript(ブラウザ動作),Visualforce との比較は Apex(サーバ動作)
+    - LWC の コントローラーは JavaScript(ブラウザ動作),Visualforce のコントローラーは Apex(サーバ動作)
       そのため、LWC のパフォーマンスが良い
+    - モバイル上での対応が Aura と LWC の方が優れている
 
 ---
 
@@ -97,7 +98,7 @@ theme: freud
 
 - 画面フローとの比較
   - 画面フローで実装可能な場合画面フローを使用することが望ましい
-  - ただ、ソースレビューを行いたい場合や、マージリクエストベース開発を行いたい場合は LWC の方がスムーズに開発を行える
+  - ただ、ソースレビューを行いたい場合や、マージリクエストベース開発を行いたい場合は LWC の方がスムーズに行える
   - ブラウザの機能(localStorage など)を使用したい場合は LWC を使用することになる
 
 ---
@@ -107,10 +108,10 @@ theme: freud
 - Aura
   - アーカイブ化されている(そのうちプロセスビルダーのように廃止されるかも？)
 - Visualforce
-  - web 標準の HTML ではない
   - コントローラーが Apex のためパフォーマンスが良くない
+  - 利点はあるため、完全に必要ないわけではない
 - Lightning Web Components
-  - 今から学習するのであれば、消去法で LWC が良い
+  - 消去法かつ Salesforce の推し機能なので LWC が良い
 
 ---
 
@@ -121,6 +122,8 @@ theme: freud
   - そのため、学習コストが低い & Web 開発を行う際に役立つかも？
 - LWC 開発時に必要なファイルの数が少なく、初期段階の理解が早い(個人差あり)
 - (Aura,Visualforce と比べると)パフォーマンスが良い
+- ただ pdf の作成や classic で動作させたいなどの場合 Visalforce の方が優れている箇所もある
+- Visualforce も Javascript は使用できるため、RemoteAction などを使用すれば LWC のように使用可能
 
 ---
 
@@ -135,7 +138,7 @@ theme: freud
 ├ xml
 ├ css(任意)
 └ Jest フォルダ
-└ プロジェクト名.test.js
+　　 └ プロジェクト名.test.js
 ```
 
 ---
@@ -202,7 +205,7 @@ export default class Test extends LightningElement {
 
 # 作成した Lightning Web Components の紹介
 
-- 勉強会の環境に一部デプロイあり
+- 勉強会の環境に一部デプロイします
 
 ---
 
