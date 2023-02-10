@@ -112,6 +112,7 @@ theme: freud
   - 利点はあるため、完全に必要ないわけではない
 - Lightning Web Components
   - 消去法かつ Salesforce の推し機能なので LWC が良い
+  - 他と比べると書きやすい(個人差あり)
 
 ---
 
