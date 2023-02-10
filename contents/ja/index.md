@@ -209,7 +209,7 @@ export default class Test extends LightningElement {
 # おまけ
 
 - LWC は Salesforce の外でも使用することが可能
-- [lwc.dev](https://lwc.dev/)という web ページがあり、こちらに詳細が記載されている。
+- [lwc.dev](https://lwc.dev/)という web ページがあり、こちらに詳細が記載されている
 - Heroku や web サーバーにデプロイすることで使用可能
 - メインの HTML と JavaScript の書き方はほぼ同じ
 - 興味のある方は「OSS LWC」などで検索してみてください
