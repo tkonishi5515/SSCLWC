@@ -51,7 +51,7 @@ theme: freud
   - Summer '08 くらい？
 - Lightning Aura Components
   - Aura と記載される
-  - 2014 くらいに発表？
+  - 2014 くらい？
 - Lightning Web Components
   - LWC と記載される
   - Summmer '19
