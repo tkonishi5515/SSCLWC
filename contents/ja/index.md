@@ -216,7 +216,7 @@ export default class Test extends LightningElement {
 - [lwc.dev](https://lwc.dev/)という web ページがあり、こちらに詳細が記載されている
 - Heroku や web サーバーにデプロイすることで使用可能
 - メインの HTML と JavaScript の書き方はほぼ同じ
-- 興味のある方は「OSS LWC」などで検索してみてください
+- 興味のある方は「OSS LWC」などで検索
 
 ---
 
